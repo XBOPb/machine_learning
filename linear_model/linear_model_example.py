@@ -24,6 +24,7 @@ x = np.array(data.drop([predict], axis=1))
 # Column with values to predict, y_train, y_test
 y = np.array(data[predict])
 
+# Split model to test and train data
 x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size=0.1)
 
 # y = mx + b
